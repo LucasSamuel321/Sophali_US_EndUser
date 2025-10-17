@@ -33,7 +33,7 @@ const OrderReceiptScreen: React.FC = () => {
       id: '1',
       orderId: '12345678',
       restaurantName: 'Curry on Wheels',
-      restaurantLogo: require('../../../assets/images/truckLogo.png'),
+      restaurantLogo: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739320/truckLogo_jyhpqn.png",
       orderType: 'Pick up',
       status: 'Completed',
       totalAmount: 25.16,
@@ -46,7 +46,7 @@ const OrderReceiptScreen: React.FC = () => {
       id: '2',
       orderId: '12345679',
       restaurantName: 'Curry on Wheels',
-      restaurantLogo: require('../../../assets/images/truckLogo.png'),
+      restaurantLogo: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739320/truckLogo_jyhpqn.png",
       orderType: 'Delivery',
       status: 'Completed',
       totalAmount: 18.25,
@@ -59,7 +59,7 @@ const OrderReceiptScreen: React.FC = () => {
       id: '3',
       orderId: '12345680',
       restaurantName: 'Curry on Wheels',
-      restaurantLogo: require('../../../assets/images/truckLogo.png'),
+      restaurantLogo: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739320/truckLogo_jyhpqn.png",
       orderType: 'Delivery',
       status: 'Cancelled',
       totalAmount: 45.80,
@@ -72,7 +72,7 @@ const OrderReceiptScreen: React.FC = () => {
       id: '4',
       orderId: '12345681',
       restaurantName: 'Curry on Wheels',
-      restaurantLogo: require('../../../assets/images/truckLogo.png'),
+      restaurantLogo: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739320/truckLogo_jyhpqn.png",
       orderType: 'Eat Later',
       status: 'Completed',
       totalAmount: 145.00,
@@ -112,7 +112,7 @@ const OrderReceiptScreen: React.FC = () => {
     <View key={order.id} style={styles.orderCard}>
       <View style={styles.orderHeader}>
         <View style={styles.restaurantInfo}>
-          <Image source={order.restaurantLogo} style={styles.restaurantLogo} />
+          <Image source={{uri: order.restaurantLogo}} style={styles.restaurantLogo} />
           <View style={styles.restaurantDetails}>
             <Text style={styles.restaurantName}>{order.restaurantName}</Text>
             <Text style={styles.orderId}>#{order.orderId}</Text>

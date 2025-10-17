@@ -23,31 +23,31 @@ const BuddiesScreen: React.FC = ({ navigation }: any) => {
       id: '1',
       name: 'Zora Thomas',
       username: 'zthomas',
-      profilePicture: require('../../../../assets/images/buddy1.jpg'),
+      profilePicture: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739613/buddy2_tlb8uw.jpg",
     },
     {
       id: '2',
       name: 'Joel V.',
       username: 'joelv4',
-      profilePicture: require('../../../../assets/images/buddy2.jpg'),
+      profilePicture: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739613/buddy2_tlb8uw.jpg",
     },
     {
       id: '3',
       name: 'Mary Bateman',
       username: 'mary1990',
-      profilePicture: require('../../../../assets/images/buddy3.jpg'),
+      profilePicture: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739613/buddy2_tlb8uw.jpg",
     },
     {
       id: '4',
       name: 'Eric B.',
       username: 'eb29_2',
-      profilePicture: require('../../../../assets/images/buddy4.jpg'),
+      profilePicture: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739613/buddy2_tlb8uw.jpg",
     },
     {
       id: '5',
       name: 'Dan Johnston',
       username: 'foodie5',
-      profilePicture: require('../../../../assets/images/buddy5.jpg'),
+      profilePicture: "https://res.cloudinary.com/do99dohrh/image/upload/v1760738806/profileImage_iu3god.jpg",
     },
 
   ];
@@ -55,7 +55,7 @@ const BuddiesScreen: React.FC = ({ navigation }: any) => {
   const renderBuddy = (buddy: Buddy, index: number) => (
     <View key={buddy.id}>
       <TouchableOpacity style={styles.buddyItem}>
-        <Image source={buddy.profilePicture} style={styles.buddyPicture} />
+        <Image source={{uri: buddy.profilePicture}} style={styles.buddyPicture} />
         <View style={styles.buddyInfo}>
           <Text style={styles.buddyName}>{buddy.name}</Text>
           <Text style={styles.buddyUsername}>{buddy.username}</Text>

@@ -115,7 +115,11 @@ const OnboardingScreen: React.FC = () => {
           <View key={slide.id} style={styles.slide}>
             {/* Image */}
             <View style={styles.imageContainer}>
+<<<<<<< HEAD
               <Image source={{uri: slide.image} } style={styles.image} resizeMode="cover" />
+=======
+              <Image source={{uri: slide.image}} style={styles.image} resizeMode="cover" />
+>>>>>>> refs/remotes/origin/master
             </View>
 
             {/* Text Content */}

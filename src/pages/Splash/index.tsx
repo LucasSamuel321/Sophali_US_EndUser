@@ -42,7 +42,7 @@ const Splash: React.FC = () => {
     >
       {/* Background Image */}
       <ImageBackground
-        source={require('../../../assets/images/splash.png')} // Add actual image
+        source={{uri: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739825/splash_t5rknd.png"}} // Add actual image
         style={styles.backgroundImage}
         resizeMode="cover"
       >
