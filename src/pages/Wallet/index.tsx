@@ -32,7 +32,7 @@ const WalletScreen: React.FC = () => {
     {
       id: '1',
       merchant: 'Curry On Wheels',
-      merchantIcon: require('../../../assets/images/truckLogo.png'),
+      merchantIcon: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739320/truckLogo_jyhpqn.png",
       date: '04/12/2025',
       time: '12:30 PM',
       amount: 36.80,
@@ -42,7 +42,7 @@ const WalletScreen: React.FC = () => {
     {
       id: '2',
       merchant: 'Curry On Wheels',
-      merchantIcon: require('../../../assets/images/truckLogo.png'),
+      merchantIcon: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739320/truckLogo_jyhpqn.png",
       date: '04/12/2025',
       time: '8:00 PM',
       amount: -16.20,
@@ -116,7 +116,7 @@ const WalletScreen: React.FC = () => {
               <View key={transaction.id}>
                 <View style={styles.transactionItem}>
                   <View style={styles.transactionLeft}>
-                    <Image source={transaction.merchantIcon} style={styles.merchantIcon} />
+                    <Image source={{uri: transaction.merchantIcon}} style={styles.merchantIcon} />
                   </View>
                   <View style={styles.transactionCenter}>
                     <Text style={styles.merchantName}>{transaction.merchant}</Text>

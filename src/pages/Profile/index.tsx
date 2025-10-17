@@ -91,7 +91,7 @@ const ProfileScreen: React.FC = () => {
         {/* Profile Section */}
         <View style={styles.profileSection}>
           <Image
-            source={require('../../../assets/images/profileImage.jpg')}
+            source={{uri: 'https://res.cloudinary.com/do99dohrh/image/upload/v1760738806/profileImage_iu3god.jpg'}}
             style={styles.profilePicture}
           />
           <Text style={styles.userName}>Catherine Bates</Text>

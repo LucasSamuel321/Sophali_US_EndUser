@@ -51,7 +51,7 @@ const HomeScreen: React.FC = () => {
   const renderPromotionalBanner = () => (
     <View style={styles.bannerContainer}>
       <Image
-        source={require('../../../assets/images/promo-banner.png')} // Add actual image
+        source={{uri: "https://res.cloudinary.com/do99dohrh/image/upload/v1760739504/promo-banner_wocr3y.png"}} // Add actual image
         style={styles.bannerImage}
         resizeMode="cover"
       />

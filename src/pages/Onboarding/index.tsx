@@ -27,25 +27,25 @@ const onboardingSlides: OnboardingSlide[] = [
     id: 1,
     title: 'Places you love',
     description: 'Discover all your favorite dishes in one spot. Place your order now or choose to Eat Later™.',
-    image: require('../../../assets/images/onboarding-1.png'), // Add actual image
+    image: "https://res.cloudinary.com/do99dohrh/image/upload/v1760738840/onboarding-1_s1elet.png", // Add actual image
   },
   {
     id: 2,
     title: 'Easy Payment',
     description: 'You can make payments with your Sophali Wallet, a Credit Card, Google Pay, or Apple Pay.',
-    image: require('../../../assets/images/onboarding-2.png'), // Add actual image
+    image: "https://res.cloudinary.com/do99dohrh/image/upload/v1760738890/onboarding-2_hqw6ye.png", // Add actual image
   },
   {
     id: 3,
     title: 'Get more for less',
     description: 'Purchase additional servings of your favorite dishes and enjoy great discounts that let you Eat Later™ or dine now!',
-    image: require('../../../assets/images/onboarding-3.png'), // Add actual image
+    image: "https://res.cloudinary.com/do99dohrh/image/upload/v1760738847/onboarding-3_iontqx.png", // Add actual image
   },
   {
     id: 4,
     title: 'Gift your Friends',
     description: 'Connect with your friends through chat and surprise them with gifts of your favorite items.',
-    image: require('../../../assets/images/onboarding-4.png'), // Add actual image
+    image: "https://res.cloudinary.com/do99dohrh/image/upload/v1760738845/onboarding-4_aoaxox.png", // Add actual image
   },
 ];
 
@@ -115,7 +115,7 @@ const OnboardingScreen: React.FC = () => {
           <View key={slide.id} style={styles.slide}>
             {/* Image */}
             <View style={styles.imageContainer}>
-              <Image source={slide.image} style={styles.image} resizeMode="cover" />
+              <Image source={{uri: slide.image}} style={styles.image} resizeMode="cover" />
             </View>
 
             {/* Text Content */}

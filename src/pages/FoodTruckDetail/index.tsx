@@ -49,7 +49,7 @@ const FoodTruckDetail: React.FC<FoodTruckDetailProps> = ({ navigation, route }) 
       name: 'Chicken Biryani',
       description: 'Aromatic rice and chicken, layered with spices, onions, and tomatoes.',
       price: 12.75,
-      image: require('../../../assets/images/chicken-biryani.png'),
+      image: "https://res.cloudinary.com/do99dohrh/image/upload/v1758744092/sophali_app/uipd5sqlulrjj3z8yzfq.png",
       isSpicy: true,
       isGlutenFree: true,
       isKosher: true,
@@ -61,7 +61,7 @@ const FoodTruckDetail: React.FC<FoodTruckDetailProps> = ({ navigation, route }) 
       description: 'Tandoori chicken breast in a rich, creamy tomato-based sauce.',
       price: 15.00,
       originalPrice: 16.50,
-      image: require('../../../assets/images/butter-chicken.png'),
+      image: "https://res.cloudinary.com/do99dohrh/image/upload/v1758744092/sophali_app/uipd5sqlulrjj3z8yzfq.png",
       isKosher: true,
       isHalal: true,
     },
@@ -205,7 +205,7 @@ const FoodTruckDetail: React.FC<FoodTruckDetailProps> = ({ navigation, route }) 
           {menuItems.map((item) => (
             <View key={item.id} style={styles.menuItem}>
               <Image 
-                source={item.image} 
+                source={{ uri: item.image}} 
                 style={styles.menuItemImage}
                 onError={(error) => console.log('Menu item image error:', error)}
               />
